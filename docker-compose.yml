@@ -1,0 +1,7 @@
+services:
+  db:
+    image: postgres:latest
+    env_file:
+      - .env
+    volumes:
+      - ./storage/postgres:/var/lib/postgresql
